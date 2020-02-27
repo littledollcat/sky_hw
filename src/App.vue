@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
+    <test />
   </div>
 </template>
+
+<script>
+import test from '@/components/test.vue'
+
+export default {
+  components: {
+    test
+  },
+  created(){
+    
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
