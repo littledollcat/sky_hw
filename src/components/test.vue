@@ -11,7 +11,7 @@
     <h1 slot="header">Vue</h1>
     <p slot="content">Vue is nice!</p>
   </card>
-  
+  <div v-for="i in coo" :key="i">{{i}}</div>
     </div>
     
 </div>
@@ -36,7 +36,7 @@ export default {
   methods:{
       handleScroll() {
         let scrollTop =window.pageYOffset ||document.documentElement.scrollTop ||document.body.scrollTop;
-    console.log(scrollTop);
+    
     if (scrollTop > 900) {
         this.titlePositon = "fixed";
         this.titleColor = "#fff";
